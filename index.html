@@ -10,44 +10,55 @@
 
     </head>
     <body>
-      <div id="full-screen-container" class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-8 bg-gray-700 min-h-screen">
+      <div id="full-screen-container" class="grid grid-cols-1 lg:grid-cols-3 bg-[url(/images/bg.png)] bg-cover min-h-screen">
 
-        <div id="banner" class="col-span-1 lg:col-span-1 flex flex-col items-center justify-center bg-gray-900 text-white rounded-xl p-10 ">
-          <img id="avatar" src="images/pke_avatar.jpg" alt="Pierre Keane smiling back at you." class="h-36 w-36 object-cover rounded-full object-[0_30%] mb-3">
-          <h1 class="text-2xl font-semibold">Pierre Keane</h1>
-          <p class="text-xl font-semibold">Full Stack Web Developer</p>
-          <p class="text-xl font-semibold"> Ruby on Rails</p>
+        <!--    -->
+        <div id="banner" class="bg-black/20 col-span-1 lg:col-span-1 flex flex-col items-center text-white p-10 ">
+          <figure class="h-39 w-39 border-3 border-gray-700 rounded-full flex items-center justify-center">
+            <img id="avatar" src="images/pke_avatar.jpg" alt="Pierre Keane smiling back at you." class="h-36 w-36 object-cover object-[0_30%] rounded-full shadow-[0_0_30px_rgba(0,0,0,1)]">
+          </figure>
 
-          <div id="proficiency" class="flex gap-5 mt-15 w-4/5 rounded-2xl bg-gray-700 p-5">
+          <h1 class="text-2xl font-bold my-2">Pierre Keane</h1>
+          <hr class="w-4/6 opacity-25">
+          <p class="text-md font-normal my-2">Full Stack Web Developer</p>
+          <hr class="w-4/6 opacity-25">
+          <p class="text-md font-normal my-2"> Ruby on Rails Specialist</p>
 
-            <div id="skills" class="w-1/2">
-              <p class="text-center font-semibold">Skills</p>
-              <hr class="mx-4">
-              <ul class="mt-5 text-left">
-                <li class="py-1 pl-2 odd:bg-gray-800">HTML & CSS</li>
-                <li class="py-1 pl-2 odd:bg-gray-800">Ruby on Rails</li>
-                <li class="py-1 pl-2 odd:bg-gray-800">Javascript</li>
-                <li class="py-1 pl-2 odd:bg-gray-800">SQL</li>
-                <li class="py-1 pl-2 odd:bg-gray-800">Git / Version Control</li>
-              </ul>
-            </div>
-
-            <div id="certificates" class="w-1/2">
-              <p class="text-center font-semibold">Certificates</p>
-              <hr class="mx-4">
-              <ul class="mt-5 text-left">
-                <li class="py-1 px-2 odd:bg-gray-800">AI Software development</li>
-                <li class="py-1 px-2 odd:bg-gray-800">JavaScript Algorithms and Data Structures</li>
-                <li class="py-1 px-2 odd:bg-gray-800">Responsive Web Design</li>
-              </ul>
-            </div>
-
+          <div id="skills" class="w-2/3 mt-10 mb-5 border-2 border-gray-600 rounded-xl shadow-[0_0_30px_rgba(0,0,0,1)]">
+            <p class="text-lg font-semibold p-4">Skills</p>
+            <hr class="opacity-25">
+            <ul class="p-4">
+              <li class="flex gap-2 p-1 text-sm"><i data-lucide="square-code"></i>HTML & CSS</li>
+              <hr class="opacity-35">
+              <li class="flex gap-2 p-1 text-sm"><i data-lucide="gem"></i>Ruby on Rails</li>
+              <hr class="opacity-35">
+              <li class="flex gap-2 p-1 text-sm"><i data-lucide="braces"></i>Javascript</li>
+              <hr class="opacity-35">
+              <li class="flex gap-2 p-1 text-sm"><i data-lucide="database"></i>SQL</li>
+              <hr class="opacity-35">
+              <li class="flex gap-2 p-1 text-sm"><i data-lucide="git-merge"></i>Git / Version Control</li>
+            </ul>
           </div>
+
+          <div id="certificates" class="w-2/3 border-2 border-gray-600 rounded-xl shadow-[0_0_30px_rgba(0,0,0,1)]">
+            <p class="text-lg font-semibold p-4">Certificates</p>
+            <hr class="opacity-25">
+            <ul class="p-4">
+              <li class="flex gap-2 p-1 text-sm"><i data-lucide="brain-circuit"></i>AI Software development</li>
+              <hr class="opacity-35">
+              <li class="flex gap-2 p-1 text-sm"><i data-lucide="between-horizontal-end"></i>JavaScript Algorithms and Data Structures</li>
+              <hr class="opacity-35">
+              <li class="flex gap-2 p-1 text-sm"><i data-lucide="panels-top-left"></i>Responsive Web Design</li>
+            </ul>
+          </div>
+
+
+
         </div>
 
-        <div id="overview-section" class="col-span-1 lg:col-span-2">
+        <div id="overview-section" class="border-l-3 border-gray-500/25 col-span-1 lg:col-span-2 shadow-[-5px_0_30px_rgba(0,0,0,1)]">
 
-          <div id="information-section" class="w-full bg-gray-900 rounded-xl text-white p-5 mb-8">
+          <div id="information-section" class="w-full text-white p-5 mb-8">
 
             <div id="about_me_description">
               <h2 class="text-xl font-semibold mb-3">About me:</h2>
@@ -69,7 +80,7 @@
 
           </div>
 
-          <div id="projects-section" class="w-full bg-gray-900 rounded-xl text-white p-5 mb-8">
+          <div id="projects-section" class="w-full text-white p-5 mb-8">
             <h2 class="text-xl font-semibold mb-10">Recent Projects:</h2>
 
             <div id="cards" class="grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -86,7 +97,7 @@
               </a>
 
               <!-- Coprobot -->
-              <a href="https://coprobot-fa964938053a.herokuapp.com/" target="_blank">
+              <a href="https://coprobot-fa964939053a.herokuapp.com/" target="_blank">
                 <div class="card rounded-2xl opacity-85 hover:opacity-100 bg-gray-700 hover:scale-101">
                   <figure>
                     <img src="images/Coprobot.jpg" class="w-full h-40 object-cover rounded-t-2xl">
@@ -140,7 +151,7 @@
 
           </div>
 
-          <div id="links" class="text-center w-full bg-gray-900 rounded-xl text-white p-5">
+          <div id="links" class="text-center w-full text-white p-5">
             <h2 class="mb-5 font-semibold pr-2 text-xl">Follow me</h2>
             <ul class="flex w-full justify-center gap-8">
                 <li class="flex hover:text-red-400 text-xl"> <a href="https://github.com/pkeane93" target="_blank"><i data-lucide="github"></i></a></li>
