@@ -10,9 +10,9 @@
 
     </head>
     <body>
-      <div id="full-screen-container" class="flex bg-gray-600">
+      <div id="full-screen-container" class="flex bg-gray-600 h-screen">
 
-        <div id="banner" class="w-1/3 h-screen flex flex-col items-center justify-center bg-gray-900 text-white m-5 rounded-xl hover:shadow-[0_10px_25px_rgba(220,38,38,0.5)] transition-shadow">
+        <div id="banner" class="w-1/3 h-100% flex flex-col items-center justify-center bg-gray-900 text-white m-5 rounded-xl ">
           <img id="avatar" src="images/pke_avatar.jpg" alt="Pierre Keane smiling back at you." class="h-36 w-36 object-cover rounded-full object-[0_30%] mb-3">
           <h1 class="text-2xl font-semibold">Pierre Keane</h1>
           <p class="text-xl font-semibold">Full Stack Web Developer</p>
@@ -51,10 +51,10 @@
 
         <div id="information-section" class="w-2/3 mt-5 mr-5">
 
-          <div id="about-me-section" class="w-full bg-gray-900 rounded-xl text-white mb-10 p-5 hover:shadow-[0_10px_25px_rgba(220,38,38,0.5)] transition-shadow">
+          <div id="about-me-section" class="w-full bg-gray-900 rounded-xl text-white mb-5 p-5 ">
             <div id="description">
               <h2 class="text-xl font-semibold mb-3">About me:</h2>
-              <p>After working in real estate, I transitioned into tech and completed Le Wagon’s full-time web development bootcamp. I now work as a full-stack web developer.</p>
+              <p>After working in real estate, I transitioned into tech and completed Le Wagon’s full-time web development bootcamp. I now work as a full-stack web developer specialized in Ruby on Rails.</p>
             </div>
 
             <div id="links" class="p-2 flex mt-10 border rounded-xl">
@@ -67,13 +67,37 @@
             </div>
           </div>
 
-          <div id="projects-section" class="w-full bg-gray-900 rounded-xl text-white hover:shadow-[0_10px_25px_rgba(220,38,38,0.5)] transition-shadow">
-            <p>hello world</p>
-            <div id="cards">
-              <div class="projects">1</div>
-              <div class="projects">2</div>
-              <div class="projects">3</div>
-              <div class="projects">4</div>
+          <div id="projects-section" class="w-full bg-gray-900 rounded-xl text-white mb-5 p-5">
+            <h2 class="text-xl font-semibold">Projects:</h2>
+
+            <div id="cards" class="grid grid-cols-3">
+
+              <!-- Saypay -->
+              <div class="card border rounded-2xl w-70 h-65 grid-cols-4 mt-10">
+                <figure>
+                  <img src="images/Saypay.jpg" class="border w-full h-40 object-cover rounded-t-2xl">
+                </figure>
+                <h3 class="pl-3 pt-2 font-semibold">Saypay</h3>
+                <p class="pl-3 pr-2 pt-1 italic">A voice-activated expense tracker for travelers.</p>
+              </div>
+
+              <!-- Coprobot -->
+              <div class="card border rounded-2xl w-70 h-65 grid-cols-4 mt-10">
+                <figure>
+                  <img src="images/Coprobot.jpg" class="border w-full h-40 object-cover rounded-t-2xl">
+                </figure>
+                <h3 class="pl-3 pt-2 font-semibold">CoproBot</h3>
+                <p class="pl-3 pr-2 pt-1 italic"> Four AI Expert to answer all questions related to Co-Ownerships. </p>
+              </div>
+
+              <!-- Test -->
+              <div class="card border rounded-2xl w-70 h-65 grid-cols-4 mt-10">
+                <figure>
+                  <img src="images/test.png" class="border w-full h-40 object-cover rounded-t-2xl">
+                </figure>
+                <h3 class="pl-3 pt-2 font-semibold">Title</h3>
+                <p class="pl-3 pr-2 pt-1 italic"> Short Description. </p>
+              </div>
 
             </div>
           </div>
@@ -84,6 +108,7 @@
 
         <!-- Run Lucide-Icons -->
         <script> lucide.createIcons();</script>
+
     </body>
 
 </html>
