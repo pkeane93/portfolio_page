@@ -23,7 +23,7 @@
           <hr class="w-4/6 opacity-25">
           <p class="text-md font-normal mt-2 mb-10 "> Ruby on Rails Specialist</p>
 
-          <div id="skills" class="w-2/3 mb-5 border-2 border-gray-600 rounded-xl shadow-[0_0_30px_rgba(0,0,0,1)]">
+          <div id="skills" class="bg-gray-700/10 w-2/3 mb-5 border-2 border-gray-600 rounded-xl shadow-[0_0_30px_rgba(0,0,0,1)]">
             <p class="text-lg font-semibold p-4">Skills</p>
             <hr class="opacity-25">
             <ul class="p-4">
@@ -39,7 +39,7 @@
             </ul>
           </div>
 
-          <div id="certificates" class="w-2/3 mb-8 border-2 border-gray-600 rounded-xl shadow-[0_0_30px_rgba(0,0,0,1)]">
+          <div id="certificates" class="bg-gray-700/10 w-2/3 mb-8 border-2 border-gray-600 rounded-xl shadow-[0_0_30px_rgba(0,0,0,1)]">
             <p class="text-lg font-semibold p-4">Certificates</p>
             <hr class="opacity-25">
             <ul class="p-4">
@@ -56,7 +56,7 @@
               <!-- Github Btn  -->
               <li class="hover:scale-105">
                 <a href="https://github.com/pkeane93" target="_blank">
-                  <div class="h-13 w-13 border border-gray-600 bg-gray-700/80 rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(0,0,0,1)]">
+                  <div class="h-13 w-13 border border-gray-600 bg-gray-700/80 hover:bg-gray-700/100 rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(0,0,0,1)]">
                     <i data-lucide="github"> </i>
                   </div>
                 </a>
@@ -65,7 +65,7 @@
               <!-- Linkedin Btn  -->
               <li class="hover:scale-105">
                 <a href="https://www.linkedin.com/" target="_blank">
-                  <div class="h-13 w-13 border border-gray-600 bg-blue-800/80 rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(0,0,0,1)]">
+                  <div class="h-13 w-13 border border-gray-600 bg-blue-800/80 hover:bg-blue-800/100 rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(0,0,0,1)]">
                     <i data-lucide="linkedin"> </i>
                   </div>
                 </a>
@@ -74,7 +74,7 @@
               <!-- Codewars Btn  -->
               <li class="hover:scale-105">
                 <a href="https://www.codewars.com/users/Cath%C3%A1n" target="_blank">
-                  <div class="h-13 w-13 border border-gray-600 bg-red-800/80 rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(0,0,0,1)]">
+                  <div class="h-13 w-13 border border-gray-600 bg-red-800/80 hover:bg-red-800/100 rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(0,0,0,1)]">
                     <i data-lucide="shield-half"> </i>
                   </div>
                 </a>
@@ -83,106 +83,145 @@
             </ul>
           </div>
 
-
-
         </div>
 
-        <div id="overview-section" class="border-l-3 border-gray-500/25 col-span-1 lg:col-span-2 shadow-[-5px_0_30px_rgba(0,0,0,1)]">
+        <div id="overview-section" class="w-full text-white p-10 border-l-3 border-gray-500/25 col-span-1 lg:col-span-2 shadow-[-5px_0_30px_rgba(0,0,0,1)]">
 
-          <div id="information-section" class="w-full text-white p-5 mb-8">
-
-            <div id="about_me_description">
-              <h2 class="text-xl font-semibold mb-3">About me:</h2>
-              <p>After building a foundation in real estate, I successfully transitioned into tech by completing Le Wagon’s
-                intensive full-time web development bootcamp. I am now a full-stack web developer with a focus on Ruby on Rails,
-                combining strong problem-solving skills with a practical understanding of business.</p>
-            </div>
-
-            <hr class="my-8">
-
-            <div id="contact_me" class="flex flex-col gap-3">
-              <h2 class="text-xl font-semibold">Get In Touch:</h2>
-              <p class="mb-3">If you have any questions about my projects or other, don't hesitate to contact through e-mail.</p>
-
-              <span class="flex gap-3"><i data-lucide="house"></i><p>Avenue de l'Echevinage, Brussels 1180, Belgium</p></span>
-              <span class="flex gap-3"><i data-lucide="mail-check"></i><p>Pierrekeane@gmail.com</p></span>
-
-            </div>
-
+          <!-- Subtitle -->
+          <div class="flex gap-5 items-center my-6">
+            <h2 class="text-2xl font-bold my-2">About Me</h2>
+            <hr class="flex-1 opacity-35">
           </div>
 
-          <div id="projects-section" class="w-full text-white p-5 mb-8">
-            <h2 class="text-xl font-semibold mb-10">Recent Projects:</h2>
+          <!-- About me -->
+          <p class="text-lg font-normal">
+            Former real estate professional turned full-stack developper with a
+            passion for creating dynamic web applications. Graduate of Le Wagon
+            bootcamp with expertise in Ruby on Rails.
+          </p>
 
-            <div id="cards" class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <!-- Subtitle -->
+          <div class="flex gap-5 items-center my-6">
+            <h2 class="text-2xl font-bold my-2"> Get in Touch</h2>
+            <hr class="flex-1 opacity-35">
+          </div>
 
-              <!-- Saypay -->
-              <a href="https://saypay-e3ad5f6bb544.herokuapp.com/" target="_blank">
-                <div class="card rounded-2xl opacity-85 hover:opacity-100 bg-gray-700 hover:scale-101">
-                  <figure>
-                    <img src="images/Saypay.jpg" class="w-full h-40 object-cover rounded-t-2xl">
-                  </figure>
-                  <h3 class="pl-3 pt-2 font-semibold">Saypay</h3>
-                  <p class="pl-3 pr-2 py-1 italic">A voice-activated expense tracker aimed for travelers.</p>
-                </div>
-              </a>
+          <!-- Get in touch -->
+          <p class="text-lg font-normal mb-2">
+            If you have any questions about my projects or other,
+            don't hesitate to contact through e-mail.
+          </p>
+          <span class="flex gap-3"><i data-lucide="house"></i><p>Avenue de l'Echevinage, Brussels 1180, Belgium</p></span>
+          <hr class="w-2/4 my-2 opacity-25">
+          <span class="flex gap-3"><i data-lucide="mail-check"></i><p>Pierrekeane@gmail.com</p></span>
 
-              <!-- Coprobot -->
-              <a href="https://coprobot-fa964939053a.herokuapp.com/" target="_blank">
-                <div class="card rounded-2xl opacity-85 hover:opacity-100 bg-gray-700 hover:scale-101">
-                  <figure>
-                    <img src="images/Coprobot.jpg" class="w-full h-40 object-cover rounded-t-2xl">
-                  </figure>
-                  <h3 class="pl-3 pt-2 font-semibold">CoproBot</h3>
-                  <p class="pl-3 pr-2 py-1 italic"> Four AI Experts to answer all questions related to Co-Ownerships. </p>
-                </div>
-              </a>
+          <!-- Subtitle -->
+          <div class="flex gap-5 items-center my-6">
+            <h2 class="text-2xl font-bold my-2">Recent Projects</h2>
+            <hr class="flex-1 opacity-35">
+          </div>
 
-              <!-- Villa Tamtam -->
-              <a href="https://tamtamsamui.netlify.app/" target="_blank">
-                <div class="card rounded-2xl opacity-85 hover:opacity-100 bg-gray-700 hover:scale-101">
-                  <figure>
-                    <img src="images/Villa_Tamtam.jpg" class="w-full h-40 object-cover rounded-t-2xl">
-                  </figure>
-                  <h3 class="pl-3 pt-2 font-semibold">Villa Tamtam</h3>
-                  <p class="pl-3 pr-2 py-1 italic"> Landing page for a luxury villa in Thailand. </p>
-                </div>
-              </a>
+          <!-- Cards -->
+          <div id="cards" class="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
-              <!-- Mini Projects -->
-              <a href="https://pke-mini-projects.netlify.app/" target="_blank">
-                <div class="card rounded-2xl opacity-85 hover:opacity-100 bg-gray-700 hover:scale-101">
-                  <figure>
-                    <img src="images/mini_projects.jpg" class="w-full h-40 object-cover rounded-t-2xl">
-                  </figure>
-                  <h3 class="pl-3 pt-2 font-semibold">Mini Projects</h3>
-                  <p class="pl-3 pr-2 py-1 italic"> Landing page where I test out mini javascript projects. </p>
-                </div>
-              </a>
+            <!-- Saypay -->
+            <a href="https://saypay-e3ad5f6bb544.herokuapp.com/" target="_blank">
+              <div class="card rounded-2xl opacity-85 hover:opacity-100 border-2 border-gray-700 rounded-xl shadow-[0_0_30px_rgba(0,0,0,1)] hover:scale-101">
 
-              <!-- Pinkfee -->
-              <div class="card rounded-2xl opacity-85 hover:opacity-100 bg-gray-700 hover:scale-101">
                 <figure>
-                  <img src="images/Pinkfee.jpg" class="w-full h-40 object-cover rounded-t-2xl">
+                  <img src="images/Saypay.jpg" class="w-full h-40 object-cover rounded-t-xl">
                 </figure>
-                <h3 class="pl-3 pt-2 font-semibold">Pinkfee</h3>
-                <p class="pl-3 pr-2 py-1 italic"> Home page of a small bookkeeping firm.</p>
+
+                <div class="bg-blue-900/10 px-3 py-2">
+                  <h3 class="font-semibold">Saypay</h3>
+                  <hr class="opacity-35 my-2">
+                  <p class="italic">Voice-Powered Expense Tracker</p>
+                </div>
+
               </div>
+            </a>
 
-              <!-- Placeholder
-              <div class="card rounded-2xl opacity-85 hover:opacity-100 bg-gray-700 hover:scale-101">
+            <!-- Coprobot -->
+            <a href="https://coprobot-fa964938053a.herokuapp.com/" target="_blank">
+              <div class="card rounded-2xl opacity-85 hover:opacity-100 border-2 border-gray-700 rounded-xl shadow-[0_0_30px_rgba(0,0,0,1)] hover:scale-101">
                 <figure>
-                  <img src="images/test.png" class="w-full h-40 object-cover rounded-t-2xl">
+                  <img src="images/Coprobot.jpg" class="w-full h-40 object-cover rounded-t-xl">
                 </figure>
-                <h3 class="pl-3 pt-2 font-semibold">Title</h3>
-                <p class="pl-3 pr-2 py-1 italic"> Short description </p>
-              </div> -->
 
-            </div>
+                <div class="bg-blue-900/10 px-3 py-2">
+                  <h3 class="font-semibold">CoproBot</h3>
+                  <hr class="opacity-35 my-2">
+                  <p class="italic">AI Co-Ownership Assistant</p>
+                </div>
+
+              </div>
+            </a>
+
+            <!-- Villa Tamtam -->
+            <a href="https://tamtamsamui.netlify.app/" target="_blank">
+              <div class="card rounded-2xl opacity-85 hover:opacity-100 border-2 border-gray-700 rounded-xl shadow-[0_0_30px_rgba(0,0,0,1)] hover:scale-101">
+                <figure>
+                  <img src="images/Tamtam.jpg" class="w-full h-40 object-cover rounded-t-xl">
+                </figure>
+
+                <div class="bg-blue-900/10 px-3 py-2">
+                  <h3 class="font-semibold">Villa Tamtam</h3>
+                  <hr class="opacity-35 my-2">
+                  <p class="italic">Luxury Villa Website</p>
+                </div>
+              </div>
+            </a>
+
+            <!-- Mini Projects -->
+            <a href="https://pke-mini-projects.netlify.app/" target="_blank">
+              <div class="card rounded-2xl opacity-85 hover:opacity-100 border-2 border-gray-700 rounded-xl shadow-[0_0_30px_rgba(0,0,0,1)] hover:scale-101">
+                <figure>
+                  <img src="images/Mini.jpg" class="w-full h-40 object-cover rounded-t-xl">
+                </figure>
+
+                <div class="bg-blue-900/10 px-3 py-2">
+                  <h3 class="font-semibold">Mini Projects</h3>
+                  <hr class="opacity-35 my-2">
+                  <p class="italic">Javascript Demos</p>
+                </div>
+              </div>
+            </a>
+
+            <!-- Pinkfee -->
+            <a href="#" target="_blank">
+              <div class="card rounded-2xl opacity-85 hover:opacity-100 border-2 border-gray-700 rounded-xl shadow-[0_0_30px_rgba(0,0,0,1)] hover:scale-101">
+                <figure>
+                  <img src="images/Pinkfee.jpg" class="w-full h-40 object-cover rounded-t-xl">
+                </figure>
+
+                <div class="bg-blue-900/10 px-3 py-2">
+                  <h3 class="font-semibold">Pinkfee</h3>
+                  <hr class="opacity-35 my-2">
+                  <p class="italic">Bookkeeping Firm Site</p>
+                </div>
+              </div>
+            </a>
+
+            <!-- Placeholder
+            <a href="#" target="_blank">
+              <div class="card rounded-2xl opacity-85 hover:opacity-100 border-2 border-gray-700 rounded-xl shadow-[0_0_30px_rgba(0,0,0,1)] hover:scale-101">
+                <figure>
+                  <img src="images/test.png" class="w-full h-40 object-cover rounded-t-xl">
+                </figure>
+
+                <div class="bg-blue-900/10 px-3 py-2">
+                  <h3 class="font-semibold">Title</h3>
+                  <hr class="opacity-35 my-2">
+                  <p class="italic">Description</p>
+                </div>
+              </div>
+            </a>
+             -->
 
           </div>
 
         </div>
+
       </div>
 
         <!-- Run Lucide-Icons -->
